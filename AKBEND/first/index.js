@@ -1,14 +1,10 @@
-var namek = "Vasu Sharma";
-const shit = require('./abc');
-const {x , getProduct} = require('./product');
+// import {z , product} from './product.js'
 
-var a = 20;
- 
-var b = 30;
-console.log(namek , a, b);
+const {private , vasu , ashu , nikhil} = require('./abc');
 
-getProduct(3 , 8);
-console.log("x from product is : " , x);
+const sayHi = require('./sayHI')
 
-console.log("is  shit running : ");
-console.log(globalThis === global);
+sayHi(private)
+sayHi(vasu)
+sayHi(ashu)
+sayHi(nikhil)

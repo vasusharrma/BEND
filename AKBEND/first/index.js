@@ -1,12 +1,25 @@
-// import {z , product} from './product.js'
+const { readFile, writeFile } = require("fs");
 
-const {private , vasu , ashu , nikhil} = require('./abc');
-
-const sayHi = require('./sayHI')
-const {items , schoolName} = require('./sweets.js');
-console.log("data is: " ,schoolName.name);
-
-sayHi(private)
-sayHi(vasu)
-sayHi(ashu)
-sayHi(nikhil)
+readFile("./father/first.txt", "utf8", (error, result) => {
+  if (error) {
+    console.log("error is : ", error);
+    return;
+  }
+  const first = result;
+  console.log(result);
+  readFile("./father/second.txt", "utf8", (error, result) => {
+    if (error) {
+      console.log("error is : ", error);
+      return;
+    }
+    const second = result;
+    console.log(result);
+    writeFile('./father/file-async.txt' , `This is async file result ${first} ,, {second}` , (error, result)=>{
+        if(error){
+            console.log(error);
+            return;
+        }
+        console.log("result of write is : " , result);
+    })
+  });
+});

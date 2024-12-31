@@ -13,7 +13,7 @@ const server = http.createServer((req , res) => {
     if(req.url == "/contact/user"){
         res.end("the user page : ");
     }
-
+//req.url 
     res.end(`
        <h1>Oops!</h1>
        <p> you got on a wrong page <p>

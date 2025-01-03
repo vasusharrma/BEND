@@ -1,12 +1,13 @@
 {
-  "name": "ep",
+  "name": "p1",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "data.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vasu Sharma",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",

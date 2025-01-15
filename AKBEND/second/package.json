@@ -1,16 +1,14 @@
 {
-  "name": "http-server",
+  "name": "second",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon app.js"
   },
-  "author": "",
+  "author": "vasu sharma",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
     "nodemon": "^3.1.9"
   }
 }
